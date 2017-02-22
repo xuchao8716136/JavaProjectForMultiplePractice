@@ -5,7 +5,7 @@
   Time: 13:54
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" %>
 <html>
   <head>
     <title>$Title$</title>
@@ -23,7 +23,37 @@
         }
         return s;
     }
+
+//    UsingJavaScriptMethodToPrintMultipleTable;
   %>
+
   <%=printMultiTable()%>
+
+  <%
+      int[] value = {1,2,4};
+      for(int i: value){
+          out.println(i);
+          /*
+          * * * out
+          *
+          * * JspWriter()
+          * println
+          * clear
+          * flush
+          * getBufferSize
+          * getRemaining
+          * isAutoFlush
+          * close
+          *
+          * request
+          * application
+          * session
+          * response
+          * Page
+          * pageContext
+          * exception
+          * config
+           */
+  %>
   </body>
 </html>
